@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'sevenSegment';
+  src: url(fonts/SevenSegment.ttf);
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.calculator {
+  width: 340px;
+  background-color: #000;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#display {
+  width: 92%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 35px;
+  text-align: right;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'sevenSegment';
+  font-weight: 500;
+  color: #ffff;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+  margin-top: 6px;
+}
+
+button {
+  padding: 15px;
+  margin: 1px;
+  margin-top: 3px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #58a712;
+  background-color: #58cc02;
+  box-shadow: 0 5px 0 #58a712;
+}
+
+button:hover {
+  border: 1px solid rgb(13, 178, 10);
+}
+
+.clicked {
+  box-shadow: none;
+  transform: translateY(5px);
+  font-size: 19px
+}
+
+.operator {
+  background-color: #d1d1d1;
+}
+
+.root,
+.del {
+  background-color: #1e6902ff;
+  color: #ffff;
+}
+
+.shadow {
+  border-color: #1b1818;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.spaceBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+span {
+  border-radius: 5px;
+  color: #f0f0f0;
+  padding: 3px 8px;
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
+.Name {
+  color: #d8d10e;
+  font-family: 'YourSelectedFont', cursive;
+  font-size: 10px;
+}

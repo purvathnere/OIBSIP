@@ -1,0 +1,141 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Pacifico&family=Poppins:wght@400;500;600;700&family=Prompt&family=Ubuntu:ital,wght@0,500;0,700;1,500;1,700&family=Varela&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+  }
+  
+  body {
+    background-image: url('bg3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .container {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  h1 {
+   
+    font-size: 3rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0,0,0,0.1); 
+    padding: 10px 20px; 
+    border-radius: 30px; 
+    display: inline-block; 
+  }
+
+  
+  
+  .input {
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: 60% 10%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .textarea {
+    min-height: 50px;
+    height: 50px;
+    max-width: 50%;
+    min-width: 50%;
+    border-radius: 10px;
+    background-color: darkslategray;
+    color: #ffff;
+    font-size: 20px;
+   padding: 10px 10px;
+    overflow: auto;
+    overflow-x: hidden;
+    margin:auto;
+  }
+  
+  .buttoninput {
+    border-radius: 10px;
+    border-color: #333;
+    background-color: #2f2d2d;
+    font-size: 15px;
+    color: #ffff;
+   
+  }
+  
+  .buttoninput:hover {
+    background-color: #160788;
+    color: white;
+  }
+  
+  .todolist {
+    margin-top: 30px;
+  }
+  
+  .allItem {
+    display: grid;
+    grid-template-columns: 50% 10% 10%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .item {
+    border: none;
+   background-color:cornflowerblue;
+    min-height: 50px;
+    padding: 10px 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 10px 0 0 10px;
+    display: grid;
+    align-content: center;
+    font-size: 20px;
+    color: #ffff;
+  }
+  
+  .del-button {
+    border-radius: 0 10px 10px 0;
+  }
+  
+  .del-button:hover {
+    background-color: red;
+  }
+  
+  .edit-button:hover {
+    background-color: green;
+  }
+  
+  button:hover {
+    font-weight: 900;
+  }
+  
+  button,
+  .edit-button,
+  .del-button {
+    cursor: pointer;
+  }
+  
+  .edit-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 3px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .edit-popup input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .edit-popup button {
+    padding: 5px 10px;
+    margin-right: 10px;
+  }

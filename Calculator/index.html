@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calculator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=YourSelectedFont&display=swap">
+</head>
+<title>Calculator</title>
+</head>
+
+<body>
+  <div class="calculator shadow">
+    <input type="text" id="display" disabled>
+    <div class="spaceBetween"><span>Calculator</span><span class="Name">Purva Athnere</span></div>
+
+    <div class="buttons">
+
+      <button class="root" onclick="sqrt()">&radic;</button>
+      <button class="root" onclick="cubeRoot()">&#8731</button>
+      <button class="del" onclick="backspace()">Del</button>
+      <button onclick="clearDisplay()" style="background-color:#8B0000; color: #ffff;">C</button>
+      <button onclick="appendCharacter('9')">9</button>
+      <button onclick="appendCharacter('8')">8</button>
+      <button onclick="appendCharacter('7')">7</button>
+      <button class="operator" onclick="appendCharacter('+')">+</button>
+      <button onclick="appendCharacter('6')">6</button>
+      <button onclick="appendCharacter('5')">5</button>
+      <button onclick="appendCharacter('4')">4</button>
+      <button class="operator" onclick="appendCharacter('-')">-</button>
+      <button onclick="appendCharacter('3')">3</button>
+      <button onclick="appendCharacter('2')">2</button>
+      <button onclick="appendCharacter('1')">1</button>
+      <button class="operator" onclick="appendCharacter('*')">×</button>
+      <button onclick="appendCharacter('0')">0</button>
+      <button onclick="appendCharacter('.')">.</button>
+      <button onclick="calculate()" style="background-color: #58cc22">=</button>
+      <button class="operator" onclick="appendCharacter('/')">/</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

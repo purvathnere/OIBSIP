@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    <style>
+        body, h1, p { margin: 0; padding: 0; }
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 { font-size: 36px; }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .hidden { display: none; }
+        .tribute { text-align: center; }
+        h2 {
+            color: #007bff;
+            font-size: 28px;
+        }
+        hr { border: 1px solid #ccc; margin: 20px 0; }
+        .name {
+            color: darkred;
+            text-align: center;
+            font-weight: bold;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+        .image-heading-container {
+            display: flex;
+            align-items: center;
+        }
+        .image {
+            width: 80px;
+            height: auto;
+            margin-right: 10px;
+        }
+        .heading {
+            font-size: 24px;
+            margin: 0;
+        }
+        .outer-box {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 4rem;
+            border-radius: 8px;
+        }
+        .profile-box {
+            margin-right: 40px;
+        }
+        .profile-box img {
+            width: auto;
+            height: 300px;
+            border-radius: 10%;
+            border: 5px solid white;
+        }
+        .info-box { flex: 1; }
+        #div1 .name img {
+            width: 30px;
+            height: auto;
+        }
+        #div6 {
+            background: url('images/nw1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            line-height: 1.6;
+        }
+        #div6 header > p { text-align: center; }
+        .description { margin-top: 20px; }
+        .description img {
+            width: auto;
+            height: 24px;
+            margin-left: 20px;
+        }
+        #div7 {
+            background: url('images/factpage.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .sp1 {
+            width: 400px;
+            height: 400px;
+        }
+        #div7 img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        #div7 h1 {
+            text-align: center;
+            font-weight: 900;
+        }
+        .icon-links {
+            display: flex;
+            position: fixed;
+            bottom: 0;
+            flex-wrap: wrap;
+            width: 100vw;
+            justify-content: center;
+            background-color: #000;
+        }
+        .icon-link {
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .icon-link:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        .icon-link a:active {
+            color: #000;
+        }
+        .icon-link a {
+            text-decoration: none;
+            color: #fff;
+            display: flex;
+            align-items: center;
+        }
+        .icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="icon-links">
+        <div class="icon-link"><a href="#" onclick="toggleDiv(1)">HOME</a></div>
+        <div class="icon-link"><a href="#" onclick="toggleDiv(2)">Early Life and Education</a></div>
+        <div class="icon-link"><a href="#" onclick="toggleDiv(3)">Career</a></div>
+        <div class="icon-link"><a href="#" onclick="toggleDiv(4)">Personal Life</a></div>
+        <div class="icon-link"><a href="#" onclick="toggleDiv(5)">Achievements</a></div>
+        <div class="icon-link"><a href="#" onclick="toggleDiv(6)">Net Worth</a></div>
+        <div class="icon-link"><a href="#" onclick="toggleDiv(7)">Google Facts and Sundar Pichai Facts</a></div>
+    </div>
+    <!-- home -->
+    <div id="div1">
+        <header><h1>Tribute Page</h1></header>
+        <div class="container">
+            <h2 class="name"><img src="images/profilepicture.jpg" alt="">Sundar Pichai<img src="images/profilepicture.jpg" alt=""></h2>
+            <hr>
+            <p>Sundar Pichai is the current CEO of Google and Alphabet. Known as a successful innovator, he focuses on developing new products and services at Google. He led the development of the Google Toolbar and Google Chrome. Pichai helped launch the Android operating system. Sundar Pichai represented Google during congressional hearings on the technology industry's practice of data collection. Pichai's life story is remarkable, and his rise to the top of Google is an endorsement of India's standing in the global technology industry - and equally, a reassuring reminder of the so-called "American Dream". Pichai began his career as a materials engineer. Following a short stint at the management consulting firm McKinsey & Co., Pichai joined Google in 2004, where he led the product management and innovation efforts for a suite of Google's client software products, including Google Chrome and ChromeOS, as well as being largely responsible for Google Drive. In addition, he went on to oversee the development of other applications such as Gmail and Google Maps. In 2010, Pichai also announced the open-sourcing of the new video codec VP8 by Google and introduced the new video format, WebM. The Chromebook was released in 2012. In 2013, Pichai added Android to the list of Google products that he oversaw. Pichai was selected to become the next CEO of Google on August 10, 2015, after previously being appointed Product Chief by CEO Larry Page. On October 24, 2015, he stepped into the new position at the completion of the formation of Alphabet Inc., the new holding company for the Google company family. He was appointed to the Alphabet Board of Directors in 2017. Pichai was included in Time's annual list of the 100 most influential people in 2016 and 2020.</p>
+        </div>
+    </div>
+    <!-- Early Life and Education -->
+    <div id="div2" class="hidden">
+       
+        <div class="outer-box">
+            <div class="profile-box"><img src="images/profilepicture.jpg" alt="Profile Picture"></div>
+            <div class="info-box">
+                <div class="inner-box">
+                    <div class="image-heading-container">
+                        <img src="images/1467.png" class="image">
+                        <h2 class="heading">Early Life and Education</h2>
+                    </div>
+                    <p>Sundar Pichai was born on June 10, 1972 in Madurai, Tamil Nadu, India to stenographer Lakshmi and GEC electrical engineer Regunatha. As a youth, he went to Jawahar Vidyalaya Senior Secondary School. Pichai went on to attend the Indian Institute of Technology Madras, and then the Indian Institute of Technology Kharagpur. From the latter school, he received a degree in metallurgical engineering. Emigrating from India to the United States, Pichai enrolled at Stanford University in Palo Alto, California. There, he earned his MS in materials science and engineering. Pichai went on to attend the Wharton School of the University of Pennsylvania, from which he graduated with his MBA.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Career -->
+    <div id="div3" class="hidden">
+        <div class="outer-box">
+            <div class="profile-box"><img src="images/pichai.jpg" alt="Profile Picture"></div>
+            <div class="info-box">
+                <div class="inner-box">
+                    <div class="image-heading-container">
+                        <img src="images/career-logo-4.jpg" class="image">
+                        <h2 class="heading">Career</h2>
+                    </div>
+                    <p>Pichai worked in engineering and product management at Applied Materials and in management consulting at McKinsey & Company. Pichai joined Google in 2004, where he led the product management and innovation efforts for a suite of Google's client software products, including Google Chrome and ChromeOS, as well as being largely responsible for Google Drive. He went on to oversee the development of other applications such as Gmail and Google Maps. On November 19, 2009, Pichai gave a demonstration of ChromeOS; the Chromebook was released for trial and testing in 2011, and released to the public in 2012. On May 20, 2010, he announced the open-sourcing of the new video codec VP8 by Google and introduced the new video format, WebM. On March 13, 2013, Pichai added Android to the list of Google products that he oversaw. Android was formerly managed by Andy Rubin. He was a director of Jive Software from April 2011 to July 30, 2013. Pichai was selected to become the next CEO of Google on August 10, 2015 after previously being appointed Product Chief by CEO, Larry Page. On October 24, 2015, he stepped into the new position at the completion of the formation of Alphabet Inc., the new holding company for the Google company family. Pichai had been suggested as a contender for Microsoft's CEO in 2014, a position that was eventually given to Satya Nadella. In August 2017, Pichai drew publicity for firing a Google employee who wrote a ten-page manifesto criticizing the company's diversity policies. In December 2017, Pichai was a speaker at the World Internet Conference in China, where he stated that "a lot of work Google does is to help Chinese companies. There are many small and medium-sized businesses in China who take advantage of Google to get their products to many other countries outside of China." In December 2019, Pichai became the CEO of Alphabet Inc. His compensation from the company topped $200 million in 2022.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Personal Life -->
+    <div id="div4" class="hidden">
+        <div class="outer-box">
+            <div class="profile-box"><img src="images/family.jpg" alt="Sundar Pichai"></div>
+            <div class="info-box">
+                <div class="inner-box">
+                    <div class="image-heading-container">
+                        <img src="images/familylogo.jpg" class="image">
+                        <h2 class="heading">Personal Life</h2>
+                    </div>
+                    <p>Sundar Pichai's heartwarming journey includes a beautiful partnership with his wife, Anjali Pichai, rooted in their shared Indian heritage. Their love story began to flourish during their time at IIT Kharagpur, where their paths intertwined. Beyond his dynamic role in the tech world, Pichai finds solace in the realms of cricket and football, showcasing his diverse interests. His connection to his cultural roots is reflected in his practice of Hinduism, which adds depth to his character. A shining testament to their union, the couple is graced with two children, a son named Kiran and a daughter named Kavya. This family tableau encapsulates a blend of love, achievement, and cultural identity, illustrating Pichai's multi-faceted life journey.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Achievements -->
+    <div id="div5" class="hidden">
+       
+        <div class="outer-box">
+            <div class="profile-box"><img src="images/achievement.jpg" alt="Your Name"></div>
+            <div class="info-box">
+                <div class="inner-box">
+                    <div class="image-heading-container">
+                        <img src="images/award.jpg" class="image">
+                        <h2 class="heading">Achievements & Awards</h2>
+                    </div>
+                    <ul>
+                        <li>He began working at Google in 2004, and by August 2007, he had been promoted to Vice President, Product Management.</li>
+                        <li>In 2009, he released Chrome OS, an operating system based on the Linux kernel that allows you to accomplish anything online without the need for a hard drive or software installed on your computer.</li>
+                        <li>He is also a co-founder of the open-source microblogging application Jaiku.</li>
+                        <li>Forbes named him one of the most powerful individuals in business in 2017.</li>
+                        <li>He also received several awards, including the World Economic Forum's Top 100 Global Thought Leaders Award; The Webby Awards' Digital Visionary Award; Variety's Visionary Award; Tony Robbins' Game Changer Award; Consumer Technology Association's Excellence in Innovation Award; CNBC's Tech Titan Award, and NDTV Profit's Man of the Year in Business Leadership Award.</li>
+                        <li>Pichai was awarded the Padma Bhushan by the Government of India in 2022, the country's third-highest civilian honor.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Net Worth -->
+    <div id="div6" class="hidden">
+        <header>
+            <h1>Net Worth</h1>
+            <p>Personal Finance</p>
+        </header>
+        <div class="description">
+            <div class="image-heading-container">
+                <img src="images/nw3.jpg" class="image">
+                <h2 class="heading" style="font-size: 24px; display: inline-block; vertical-align: middle; margin: 10px;">Net Worth</h2>
+            </div>
+            <i>
+                <p style="color:whitesmoke; font-weight: 300; padding: 30px;">Sundar Pichai is an Indian-American business executive with a net worth of $600 million. He is currently the CEO of Alphabet Inc, the parent company of Google. Pichai became CEO of Google in August 2015 as part of a restructuring that established Alphabet Inc. as Google's parent. He succeeded company co-founder Larry Page as CEO of Alphabet in 2019. Before becoming CEO, Pichai worked at Google for 11 years, leading the development of products like Google Chrome, Google Drive, and Google Maps. Between 2015 and 2023, Sundar received north of $1.3 billion in total compensation and potential earnings, pre-tax. He got $200 million back in 2016 when he was first promoted to CEO. He got $280 million three years later in 2019. He got $226 million in late 2022. Sundar Pichai's base salary is $2 million, though in a recent typical year he has earned north of $100 million when bonuses and stock grants are taken into account. For example, he earned $100 million in 2015 and $199 million in 2016. When he earns these large salaries, it's mostly made up of share grants. In 2017 he "only" made $1.3 million because he was not given a major grant. In 2018 his total compensation was $470 million.</p>
+            </i>
+        </div>
+    </div>
+    <!-- Some Facts about Sundar Pichai -->
+    <div id="div7" class="hidden">
+        <div>
+            <!-- Heading -->
+            <h1>Some Facts about Sundar Pichai</h1>
+            <!-- Paragraph -->
+            <p>Here are some very special things about Google CEO Sundar Pichai on the occasion of Google’s birthday. then We will be discussed interesting facts about Sunder Pichai.</p>
+            <!-- Picture -->
+            <img class="sp1" src="images/sp.jg.jpg" alt="sp">
+            <!-- Bullet Points -->
+            <ul>
+                <h4>
+                    <li>Sundar Pichai says that he was repeatedly and aggressively contacted by Twitter and Microsoft while working at Google but was subsequently offered large compensation packages to stay. Pichai grew up with a mother who worked as a stenographer and a father who was an electrical engineer at GEC in India.</li>
+                    <li>Pichai grew up in a modest two-room apartment with his family, missing basic comforts like a refrigerator, and recalls a drought that occurred during his childhood. Pichai still can't sleep without a glass of water by his bedside.</li>
+                    <li>Sundar Pichai met his now-wife Anjali Pichai at IIT Kharagpur, and the couple married later.</li>
+                    <li>Pichai was a voracious reader who used to devour anything and everything.</li>
+                    <li>He enjoys both cricket and football.</li>
+                    <li> With this reorganization of Google/Alphabet Inc., Pichai will control: search, ads, maps, the Google Play Store, YouTube, and Android.</li>
+                    <li>In February 2014, Pichai was rumored to be in active negotiations with Microsoft to become that tech giant's third CEO.</li>
+                    <li>His colleagues tell Bloomberg that Pichai tends to walk it out when he's deep in thought. It's not unusual for him to wander away in the middle of a meeting, only to return with the solution to whatever problem is being discussed.</li>
+                    <li>Born in Chennai in the state of Tamil Nadu, India, in 1972, Sundar's full name is Pichai Sundararajan. Though he had a modest upbringing, he's now worth a reported $150 million.</li>
+                    <li>His father, an electrical engineer, had to save for three years to buy the family a new scooter, but made sure Pichai and his brother had the best education the family could afford, at Padma Seshadri Bala Bhavan.</li>
+                    <li>Pichai's father told Bloomberg he believes that talking to young Sundar about the challenges in his work as an electrical engineer led to his son's interest in technology.</li>
+                    <li>Pichai was captain of his high school cricket team before earning his bachelor of engineering degree from the Indian Institute of Technology; his MS from Stanford; and an MBA from the Wharton School of the University of Pennsylvania. When Sundar won a scholarship to Stanford, his father withdrew more than his annual salary from the family's savings to fly him to the United States.</li>
+                    <li>Prior to joining Google, he did management consulting with McKinsey & Company.</li>
+                    <li>Pichai has been with Google since 2004, when he joined to lead product management for Google Chrome and Chrome OS. He was involved with Google Drive and went on to oversee Gmail and Google Maps, as well.</li>
+                    <li>In 2011, Pichai drew attention when he was considered to lead product and replace Jason Goldman at Twitter. He chose to stay with Google.</li>
+                    <li>In 2013, Pichai took over Android founder Andy Rubin's portfolio to run mobile platforms. He was also entrusted with wooing more than a billion global users to the Android ecosystem.</li>
+                    <li>According to Business Insider, Pichai was skilled at staying out of politics and drama at Google. When he reported to Marissa Mayer, he reportedly sat outside her office for hours, if necessary, to make sure his team had good performance reviews.</li>
+                    <li>When he was almost lured away to Microsoft, Google reportedly negotiated desperately to retain Pichai for $50 million a year in stocks. <br><br><br><br>.</li>
+                </h4>
+            </ul>
+            <div>
+                <p style="text-align: center;">Source : Wiki || Youtube</p>
+            </div>
+        </div>
+<br><br><br><br><br><br>
+    </div>
+  
+    <!-- JavaScript -->
+    <script>
+        function toggleDiv(divNumber) {
+            // Hide all divs
+            for (let i = 1; i <= 7; i++) {
+                document.getElementById(`div${i}`).classList.add("hidden");
+            }
+            // Show the selected div
+            document.getElementById(`div${divNumber}`).classList.remove("hidden");
+        }
+    </script>
+</body>
+</html>
